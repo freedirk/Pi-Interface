@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="30">
+<title>Raspberry Pi Network Tool</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Raspberry Pi Network Tool</h1>
+          <p class="text-center">A collection of open source tools designed to help a user get a picture of their network, and monitor network status.</p>
+          <p>&nbsp;</p>
+          <!-- <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
+
+<!--  SECTION-1 -->
+<section>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3  page-header text-center">
+      <h2>Interface details</h2>
+	<!--#echo var="DATE_LOCAL"-->
+      <pre style="text-align:left"><!--#exec cmd="ifconfig | tee /home/admin/Logs/interfaces/interfacedetails.txt"--></pre>
+      
+    </div>
+  </div>
+  <div class="container ">
+      <div class="table-responsive">
+          
+    <div class="row"> 
+    </div>
+      </div>
+</div>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+          
+        
+        <div class=" text-center col-xs-6 col-xs-offset-3 "> 
+        	<a class="btn  btn-block btn-lg btn-success" href="interface.shtml" title="">Update Interface</a> 
+        </div>
+	</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- /container -->
+  
+  
+  <!-- / CONTAINER--> 
+</section>
+<div class="well"> </div>
+
+
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

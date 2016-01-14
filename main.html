@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raspberry Pi Network Tool</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Raspberry Pi Network Tool</h1>
+          <p class="text-center">A collection of open source tools designed to help a user get a picture of their network, and monitor network status.</p>
+          <p>&nbsp;</p>
+          <!-- <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
+
+<!--  SECTION-1 -->
+<section>
+  <div class="row">
+    <div class="col-lg-12 page-header text-center">
+      <h2>THE TOOLS</h2>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12 text-center"> <a href="interface.shtml" target="_blank"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/computers3.png" data-holder-rendered="true">
+        <h3>Network Interfaces</h3>
+        <p>View details about the network interfaces of the Raspberry Pi.</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="interface.shtml" role="button">View Interface</a> </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"> <a href="./Functions/wireshark.sh"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/whale1.png" data-holder-rendered="true">
+        <h3>Wire Shark</h3>
+        <p>A network packet capture tool. More details available at; <a href="www.wireshark.org" target="new">www.wireshark.org</a></p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="./Functions/wireshark.sh" role="button">Start Wireshark</a> </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"> <a href="./Functions/zenmap.sh"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/eyeball15.png" data-holder-rendered="true">
+        <h3>Zenmap</h3>
+        <p>A graphical Interface for Nmap. Allows a target to be scanned to establish which ports are open.</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="./Functions/zenmap.sh" role="button">Start Zenmap</a> </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"> <a href="./Functions/fing.sh" target="_blank"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/data2.png" data-holder-rendered="true">
+        <h3>Device monitor</h3>
+        <p>View the devices attached to the network.</p><br>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Start Device monitor</a> </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"> <a href="./Functions/heartbeat.sh" target="_blank"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/heartbeat.png" data-holder-rendered="true"><a/>
+        <h3>Heartbeat monitor</h3>
+        <p>Starts the network service status monitor, Checks your essential services every minute</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="monitor.php" role="button">Start Heartbeat</a> </p>
+      </div>
+      <div class="col-lg-4 col-sm-12 text-center"><a href="config.html" target="_blank"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="img/gear74.png" data-holder-rendered="true"><a/>
+        <h3>Configuration</h3>
+        <p>This is for use on the Pi locally, or through RDP or VNC. Access to the config files for the monitoring interfaces.</p>
+        <p class="text-center"><a class="btn btn-primary btn-lg" href="configpage.html" role="button">Go to Config</a> </p>
+      </div>
+    </div>
+    <div class="row"> </div>
+</div>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 page-header text-center">
+        <h2>LICENSES AND OTHER LEGAL STUFF</h2>
+        <p>All of the software included in this distribution is covered by the following licenses. All credits to the respective authors. Full license details can be found below. </p>
+      </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  <!-- /container -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 page-header text-center">
+        
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-lg-4">
+        <h3>GNU GPL</h3>
+        <p> <i class="icon-desktop "></i>Published software should be free software. To make it free software, you need to release it under a free software license. We normally use the GNU General Public License (GNU GPL), but occasionally we use other free software licenses... </p>
+        <p><a class="btn btn-default" href="http://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">View full license »</a></p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>APACHE</h3>
+        <p> <i class="icon-desktop "></i> The Apache Software Foundation uses various licenses to distribute software and documentation, to accept regular contributions from individuals and corporations, and to accept larger grants of existing software products...</p>
+        <p><a class="btn btn-default" href="https://www.apache.org/licenses/LICENSE-2.0">View full license »</a></p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>LEGAL RESPONSIBILITY</h3>
+        <p> <em class="icon-desktop "></em> The tools in this collection are provided freely under their respective licenses. Be aware however that their abuse could constitute a crime in your region. Be sure you are authorised to carry out monitoring of the network you use this with . . .</p>
+        <p><a class="btn btn-default" href="legal.html">View details »</a></p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>Feature Description</h3>
+        <p> <em class="icon-desktop "></em> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, earum rem nostrum provident repellat inventore laborum deleniti quas facere Quasi impedit autem qui cupiditate modi vero vitae dolorum nisi explicabo ea dolores animi. Inventore, omnis.</p>
+        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>Fing from Overlook</h3>
+        <p> <i class="icon-desktop "></i> Fing is a free software provided by Overlook. It is not covered by the GNU GPL or by the Apache licence, but permission has been granted by Overlook to include it in this project. Many thanks to all at Overlook for their support. More details about Fing and Fingbox can be found below</p>
+        <p><a class="btn btn-default" href="http://www.overlooksoft.com/features">View details »</a></p>
+      </div>
+      <div class="col-xs-6 col-lg-4">
+        <h3>Feature Description</h3>
+        <p> <i class="icon-desktop "></i> Start the essential services monitor</p>
+        <p><a class="btn btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- / CONTAINER--> 
+</section>
+<div class="well"> </div>
+
+
+<footer class="text-center">
+  
+</footer>
+<!-- / FOOTER --> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#!/bin/bash
+HOSTS="cyberciti.biz theos.in 8.8.8.8"
+COUNT=4
+
+function check_output ()
+{
+        host="$1"
+        testcase="$2"
+
+        if [ -z $host ]; then
+                echo "Critical Hostname not supplied"
+                exit 2
+        fi
+
+        case "${testcase}" in
+                "1"|"2"|"3")
+                        echo "${host} Warning."
+                        #exit 1
+                ;;
+                "4")
+                        echo "${host} OK"
+                        #exit 0
+                ;;
+                *)
+                        echo "${host} is down (ping failed) at $(date)"
+                        #exit 2
+                ;;
+        esac
+}
+
+
+
+for myHost in $HOSTS
+do
+  count=$(ping -w5 -W1 -n -q -c $COUNT $myHost | awk '/received/{ print $4 }')
+#  :cal SetSyn("sh")
+
+ # if [ $count -eq 0 ]; then
+    # if number of packets is 0
+   # echo "Host : $myHost is down (ping failed) at $(date)"
+ # fi
+
+#if the number of packets returned is less than 4, but more than 1
+	check_output $myHost $count 
+
+
+#if the number of packets is equal to 4
+  
+done > /tmp/pingout.tmp
+
+mv /tmp/pingout.tmp /tmp/pingout
+
